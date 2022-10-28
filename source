@@ -1,0 +1,399 @@
+-- Monstrum's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local dopiumbs = Instance.new("ScreenGui")
+local wmhandlersunset = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local glow = Instance.new("ImageLabel")
+local main = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local UIGradient = Instance.new("UIGradient")
+local loader = Instance.new("TextLabel")
+local sunset = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local thesep = Instance.new("TextLabel")
+local nameofplayer = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local thesep_2 = Instance.new("TextLabel")
+local ping = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local mstext = Instance.new("TextLabel")
+local thesp = Instance.new("TextLabel")
+local time = Instance.new("TextLabel")
+local glow_2 = Instance.new("ImageLabel")
+local glow_3 = Instance.new("ImageLabel")
+local menuSunset = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local tabbar = Instance.new("Frame")
+local UIStroke_2 = Instance.new("UIStroke")
+local rb = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIStroke_3 = Instance.new("UIStroke")
+local UICorner_5 = Instance.new("UICorner")
+local vis = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke_4 = Instance.new("UIStroke")
+local world = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local UIStroke_5 = Instance.new("UIStroke")
+local misc = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UIStroke_6 = Instance.new("UIStroke")
+local sunset_2 = Instance.new("TextLabel")
+local UIStroke_7 = Instance.new("UIStroke")
+local Frame = Instance.new("Frame")
+local sunset_3 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+
+--Properties:
+
+dopiumbs.Name = "dopium-bs"
+dopiumbs.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+dopiumbs.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+wmhandlersunset.Name = "wm-handler-sunset"
+wmhandlersunset.Parent = dopiumbs
+wmhandlersunset.AnchorPoint = Vector2.new(0, 1)
+wmhandlersunset.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+wmhandlersunset.Position = UDim2.new(0.443068594, 0, 1, 0)
+wmhandlersunset.Size = UDim2.new(0, 218, 0, 22)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = wmhandlersunset
+
+glow.Name = "glow"
+glow.Parent = wmhandlersunset
+glow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glow.BackgroundTransparency = 1.000
+glow.Position = UDim2.new(-0.2651003, 0, -0.956521749, 0)
+glow.Size = UDim2.new(0, 91, 0, 66)
+glow.Image = "http://www.roblox.com/asset/?id=9313765710"
+glow.ImageColor3 = Color3.fromRGB(116, 131, 155)
+glow.ImageTransparency = 0.600
+
+main.Name = "main"
+main.Parent = wmhandlersunset
+main.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+main.Position = UDim2.new(-0.0135193933, 0, -0.0434782505, 0)
+main.Size = UDim2.new(0, 220, 0, 22)
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = main
+
+UIStroke.Parent = main
+UIStroke.Color = Color3.fromRGB(255, 255, 255)
+UIStroke.Thickness = 1.500
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(96, 140, 195)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(76, 111, 155))}
+UIGradient.Rotation = 90
+UIGradient.Parent = UIStroke
+
+loader.Name = "loader"
+loader.Parent = main
+loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loader.BackgroundTransparency = 1.000
+loader.Position = UDim2.new(0.0213251449, 0, -0.0454545468, 0)
+loader.Size = UDim2.new(0, 50, 0, 23)
+loader.Font = Enum.Font.Ubuntu
+loader.Text = "dopium  ~"
+loader.TextColor3 = Color3.fromRGB(255, 255, 255)
+loader.TextSize = 10.000
+loader.TextWrapped = true
+
+sunset.Name = "sunset"
+sunset.Parent = main
+sunset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sunset.BackgroundTransparency = 1.000
+sunset.Position = UDim2.new(0.245684192, 0, -0.0454545468, 0)
+sunset.Size = UDim2.new(0, 35, 0, 23)
+sunset.Font = Enum.Font.Ubuntu
+sunset.Text = "sunset"
+sunset.TextColor3 = Color3.fromRGB(255, 255, 255)
+sunset.TextSize = 10.000
+sunset.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(90, 105, 161)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(161, 189, 255))}
+UIGradient_2.Parent = sunset
+
+thesep.Name = "thesep"
+thesep.Parent = main
+thesep.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+thesep.BackgroundTransparency = 1.000
+thesep.Position = UDim2.new(0.391420901, 0, -0.0909090936, 0)
+thesep.Size = UDim2.new(0, 9, 0, 23)
+thesep.Font = Enum.Font.Ubuntu
+thesep.Text = "|"
+thesep.TextColor3 = Color3.fromRGB(255, 255, 255)
+thesep.TextSize = 10.000
+thesep.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+thesep.TextWrapped = true
+
+nameofplayer.Name = "nameofplayer"
+nameofplayer.Parent = main
+nameofplayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameofplayer.BackgroundTransparency = 1.000
+nameofplayer.Position = UDim2.new(0.429937661, 0, -0.0454545468, 0)
+nameofplayer.Size = UDim2.new(0, 41, 0, 23)
+nameofplayer.Font = Enum.Font.Ubuntu
+nameofplayer.Text = "demyaha"
+nameofplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameofplayer.TextSize = 10.000
+nameofplayer.TextWrapped = true
+
+UITextSizeConstraint.Parent = nameofplayer
+UITextSizeConstraint.MaxTextSize = 10
+
+thesep_2.Name = "thesep"
+thesep_2.Parent = main
+thesep_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+thesep_2.BackgroundTransparency = 1.000
+thesep_2.Position = UDim2.new(0.612473488, 0, -0.0909090936, 0)
+thesep_2.Size = UDim2.new(0, 9, 0, 23)
+thesep_2.Font = Enum.Font.Ubuntu
+thesep_2.Text = "|"
+thesep_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+thesep_2.TextSize = 10.000
+thesep_2.TextWrapped = true
+
+ping.Name = "ping"
+ping.Parent = main
+ping.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ping.BackgroundTransparency = 1.000
+ping.Position = UDim2.new(0.646444678, 0, 0, 0)
+ping.Size = UDim2.new(0, 16, 0, 21)
+ping.Font = Enum.Font.Ubuntu
+ping.Text = "49"
+ping.TextColor3 = Color3.fromRGB(255, 255, 255)
+ping.TextScaled = true
+ping.TextSize = 10.000
+ping.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(90, 105, 161)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(161, 189, 255))}
+UIGradient_3.Parent = ping
+
+UITextSizeConstraint_2.Parent = ping
+UITextSizeConstraint_2.MaxTextSize = 10
+
+mstext.Name = "mstext"
+mstext.Parent = main
+mstext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mstext.BackgroundTransparency = 1.000
+mstext.Position = UDim2.new(0.722999871, 0, -0.0454545468, 0)
+mstext.Size = UDim2.new(0, 13, 0, 23)
+mstext.Font = Enum.Font.Ubuntu
+mstext.Text = "ms"
+mstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+mstext.TextSize = 10.000
+mstext.TextWrapped = true
+
+thesp.Name = "thesp"
+thesp.Parent = main
+thesp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+thesp.BackgroundTransparency = 1.000
+thesp.Position = UDim2.new(0.782090902, 0, -0.0909090936, 0)
+thesp.Size = UDim2.new(0, 17, 0, 23)
+thesp.Font = Enum.Font.Ubuntu
+thesp.Text = "|"
+thesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+thesp.TextSize = 10.000
+thesp.TextWrapped = true
+
+time.Name = "time"
+time.Parent = main
+time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+time.BackgroundTransparency = 1.000
+time.Position = UDim2.new(0.821564555, 0, -0.0909090936, 0)
+time.Size = UDim2.new(0, 40, 0, 25)
+time.Font = Enum.Font.Ubuntu
+time.Text = "21:24"
+time.TextColor3 = Color3.fromRGB(255, 255, 255)
+time.TextSize = 10.000
+time.TextWrapped = true
+
+glow_2.Name = "glow"
+glow_2.Parent = wmhandlersunset
+glow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glow_2.BackgroundTransparency = 1.000
+glow_2.Position = UDim2.new(-0.575247645, 0, -1.56521738, 0)
+glow_2.Size = UDim2.new(0, 428, 0, 59)
+glow_2.ZIndex = 0
+glow_2.Image = "http://www.roblox.com/asset/?id=9313765710"
+glow_2.ImageColor3 = Color3.fromRGB(96, 140, 195)
+glow_2.ImageTransparency = 0.600
+
+glow_3.Name = "glow"
+glow_3.Parent = wmhandlersunset
+glow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glow_3.BackgroundTransparency = 1.000
+glow_3.Position = UDim2.new(0.671116889, 0, -1, 0)
+glow_3.Size = UDim2.new(0, 136, 0, 66)
+glow_3.ZIndex = 0
+glow_3.Image = "http://www.roblox.com/asset/?id=9313765710"
+glow_3.ImageColor3 = Color3.fromRGB(116, 131, 155)
+glow_3.ImageTransparency = 0.600
+
+menuSunset.Name = "menuSunset"
+menuSunset.Parent = dopiumbs
+menuSunset.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+menuSunset.Position = UDim2.new(0.428571403, 0, 0.360493839, 0)
+menuSunset.Size = UDim2.new(0, 307, 0, 225)
+menuSunset.Visible = false
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = menuSunset
+
+tabbar.Name = "tabbar"
+tabbar.Parent = menuSunset
+tabbar.BackgroundColor3 = Color3.fromRGB(19, 18, 19)
+tabbar.Position = UDim2.new(0.0260586347, 0, 0.0488888919, 0)
+tabbar.Size = UDim2.new(0, 65, 0, 203)
+
+UIStroke_2.Parent = tabbar
+UIStroke_2.Color = Color3.fromRGB(40, 40, 40)
+UIStroke_2.Transparency = 0.500
+
+rb.Name = "rb"
+rb.Parent = tabbar
+rb.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+rb.BorderSizePixel = 0
+rb.Position = UDim2.new(0.0615384616, 0, 0.068965517, 0)
+rb.Size = UDim2.new(0, 57, 0, 14)
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = rb
+
+UIStroke_3.Parent = rb
+UIStroke_3.Color = Color3.fromRGB(40, 40, 40)
+UIStroke_3.Transparency = 0.500
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = tabbar
+
+vis.Name = "vis"
+vis.Parent = tabbar
+vis.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+vis.BorderSizePixel = 0
+vis.Position = UDim2.new(0.0615384616, 0, 0.167487681, 0)
+vis.Size = UDim2.new(0, 57, 0, 14)
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = vis
+
+UIStroke_4.Parent = vis
+UIStroke_4.Color = Color3.fromRGB(40, 40, 40)
+UIStroke_4.Transparency = 0.500
+
+world.Name = "world"
+world.Parent = tabbar
+world.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+world.BorderSizePixel = 0
+world.Position = UDim2.new(0.0615384616, 0, 0.270935953, 0)
+world.Size = UDim2.new(0, 57, 0, 14)
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = world
+
+UIStroke_5.Parent = world
+UIStroke_5.Color = Color3.fromRGB(40, 40, 40)
+UIStroke_5.Transparency = 0.500
+
+misc.Name = "misc"
+misc.Parent = tabbar
+misc.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+misc.BorderSizePixel = 0
+misc.Position = UDim2.new(0.0615384616, 0, 0.369458109, 0)
+misc.Size = UDim2.new(0, 57, 0, 14)
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = misc
+
+UIStroke_6.Parent = misc
+UIStroke_6.Color = Color3.fromRGB(40, 40, 40)
+UIStroke_6.Transparency = 0.500
+
+sunset_2.Name = "sunset"
+sunset_2.Parent = tabbar
+sunset_2.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+sunset_2.BackgroundTransparency = 1.000
+sunset_2.BorderSizePixel = 0
+sunset_2.Position = UDim2.new(0.103538163, 0, 0.932073891, 0)
+sunset_2.Size = UDim2.new(0, 35, 0, 10)
+sunset_2.Font = Enum.Font.Ubuntu
+sunset_2.Text = "pyke"
+sunset_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+sunset_2.TextScaled = true
+sunset_2.TextSize = 10.000
+sunset_2.TextTransparency = 0.400
+sunset_2.TextWrapped = true
+
+UIStroke_7.Parent = menuSunset
+UIStroke_7.Color = Color3.fromRGB(40, 40, 40)
+
+Frame.Parent = menuSunset
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.650
+Frame.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame.Position = UDim2.new(0.263843656, 0, 0.0488888882, 0)
+Frame.Size = UDim2.new(0, 207, 0, 0)
+
+sunset_3.Name = "sunset"
+sunset_3.Parent = menuSunset
+sunset_3.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+sunset_3.BackgroundTransparency = 1.000
+sunset_3.BorderSizePixel = 0
+sunset_3.Position = UDim2.new(0.842000008, 0, 0.936999977, 0)
+sunset_3.Size = UDim2.new(0, 35, 0, 10)
+sunset_3.Font = Enum.Font.Ubuntu
+sunset_3.Text = "sunset"
+sunset_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+sunset_3.TextScaled = true
+sunset_3.TextSize = 10.000
+sunset_3.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(161, 161, 161)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(208, 222, 255))}
+UIGradient_4.Parent = sunset_3
+
+-- Scripts:
+
+local function QEHLFAI_script() -- ping.LocalScript 
+	local script = Instance.new('LocalScript', ping)
+
+	function GetPing()
+		local Ping = 300-((1/wait())*10)
+		if Ping <1  then
+			Ping = 1
+		end
+		return math.floor(Ping)
+	end
+	
+	while wait(1) do
+		script.Parent.Text = GetPing()
+	end
+end
+coroutine.wrap(QEHLFAI_script)()
+local function ERUNFG_script() -- time.LocalScript 
+	local script = Instance.new('LocalScript', time)
+
+	local timestamp = 906000490
+	
+	local function formatTime(t)
+		local t = t or tick()
+		
+		local hours = math.floor(t/3600) % 24
+		local mins = math.floor(t/60) % 60
+		
+		if mins <= 9 then
+			mins = "0"..mins
+		end
+		script.Parent.Text = hours..":"..mins
+	end
+	
+	while true do
+		formatTime()
+		wait(1)
+	end
+end
+coroutine.wrap(ERUNFG_script)()
