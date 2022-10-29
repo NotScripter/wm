@@ -25,6 +25,9 @@ local time = Instance.new("TextLabel")
 local loader = Instance.new("TextLabel")
 local glow_2 = Instance.new("ImageLabel")
 local glow_3 = Instance.new("ImageLabel")
+local rTx = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -83,6 +86,7 @@ sunset.TextStrokeTransparency = 0.400
 sunset.TextWrapped = true
 
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(90, 105, 161)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(161, 189, 255))}
+UIGradient_2.Offset = Vector2.new(0, 80)
 UIGradient_2.Parent = sunset
 
 thesep.Name = "thesep"
@@ -219,9 +223,38 @@ glow_3.Image = "http://www.roblox.com/asset/?id=9313765710"
 glow_3.ImageColor3 = Color3.fromRGB(116, 131, 155)
 glow_3.ImageTransparency = 0.500
 
+rTx.Name = "rTx"
+rTx.Parent = dopiumbs
+rTx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rTx.BackgroundTransparency = 1.000
+rTx.Position = UDim2.new(0, 0, 0.469135791, 0)
+rTx.Size = UDim2.new(0, 56, 0, 21)
+rTx.ZIndex = 2
+rTx.Font = Enum.Font.Unknown
+rTx.Text = "RTX"
+rTx.TextColor3 = Color3.fromRGB(255, 255, 255)
+rTx.TextScaled = true
+rTx.TextSize = 14.000
+rTx.TextStrokeTransparency = 0.930
+rTx.TextTransparency = 1.000
+rTx.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.37, Color3.fromRGB(255, 204, 0)), ColorSequenceKeypoint.new(0.56, Color3.fromRGB(11, 96, 255)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(251, 255, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 0, 212)), ColorSequenceKeypoint.new(0.93, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))}
+UIGradient_4.Rotation = 45
+UIGradient_4.Parent = rTx
+
+ImageLabel.Parent = dopiumbs
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(-0.0453597493, 0, 0.450617284, 0)
+ImageLabel.Size = UDim2.new(0, 203, 0, 51)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9313765710"
+ImageLabel.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.ImageTransparency = 1.000
+
 -- Scripts:
 
-local function TMAFAOW_script() -- ping.LocalScript 
+local function BZYVSM_script() -- ping.LocalScript 
 	local script = Instance.new('LocalScript', ping)
 
 	function GetPing()
@@ -236,8 +269,8 @@ local function TMAFAOW_script() -- ping.LocalScript
 		script.Parent.Text = GetPing()
 	end
 end
-coroutine.wrap(TMAFAOW_script)()
-local function TMLON_script() -- time.LocalScript 
+coroutine.wrap(BZYVSM_script)()
+local function OJZNUQH_script() -- time.LocalScript 
 	local script = Instance.new('LocalScript', time)
 
 	local timestamp = 906000490
@@ -259,4 +292,23 @@ local function TMLON_script() -- time.LocalScript
 		wait(1)
 	end
 end
-coroutine.wrap(TMLON_script)()
+coroutine.wrap(OJZNUQH_script)()
+local function CBYEGZ_script() -- dopiumbs.rtx 
+	local script = Instance.new('LocalScript', dopiumbs)
+
+	--//Services
+	local TweenService = game:GetService("TweenService")
+	
+	--//Variables
+	local text = script.Parent.rTx
+	local glow = script.Parent.ImageLabel
+	if not game.Loaded then
+		game.Loaded:Wait()
+	end
+	wait(0.5)
+	local Tween1 = TweenService:Create(text, TweenInfo.new(1, Enum.EasingStyle.Quint), {TextTransparency = 0})
+	Tween1:Play()
+	local Tween2 = TweenService:Create(glow, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {ImageTransparency = 0.3})
+	Tween2:Play()
+end
+coroutine.wrap(CBYEGZ_script)()
