@@ -338,7 +338,7 @@ notText.TextWrapped = true
 
 -- Scripts:
 
-local function JEKFJUJ_script() -- time.LocalScript 
+local function XXQQE_script() -- time.LocalScript 
 	local script = Instance.new('LocalScript', time)
 
 	local timestamp = 906000490
@@ -360,13 +360,13 @@ local function JEKFJUJ_script() -- time.LocalScript
 		wait(1)
 	end
 end
-coroutine.wrap(JEKFJUJ_script)()
-local function NDOCRPA_script() -- ntfhandlersunset.localscript 
+coroutine.wrap(XXQQE_script)()
+local function YCSUG_script() -- ntfhandlersunset.localscript 
 	local script = Instance.new('LocalScript', ntfhandlersunset)
 
 	wait(3)
 	script.Parent.Parent["ntf-handler-sunset"]:TweenPosition(UDim2.new(0.843, 0,1, 0),"Out","Quint",0.8)
 	wait(5)
-	script.Parent.Parent["ntf-handler-sunset"]:TweenPosition(UDim2.new(1, 0, 2, 0),"Out","Quint",20)
+	script.Parent.Parent["ntf-handler-sunset"]:TweenPosition(UDim2.new(1, 0, 2, 0),"Out","Quint",15)
 end
-coroutine.wrap(NDOCRPA_script)()
+coroutine.wrap(YCSUG_script)()
