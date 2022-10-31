@@ -25,6 +25,19 @@ local time = Instance.new("TextLabel")
 local loader = Instance.new("TextLabel")
 local glow_2 = Instance.new("ImageLabel")
 local glow_3 = Instance.new("ImageLabel")
+local ntfhandlersunset = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local glow_4 = Instance.new("ImageLabel")
+local glow_5 = Instance.new("ImageLabel")
+local glow_6 = Instance.new("ImageLabel")
+local main_2 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIStroke_2 = Instance.new("UIStroke")
+local UIGradient_4 = Instance.new("UIGradient")
+local notifything = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local dp = Instance.new("TextLabel")
+local notText = Instance.new("TextLabel")
 
 --Properties:
 
@@ -220,9 +233,112 @@ glow_3.Image = "http://www.roblox.com/asset/?id=9313765710"
 glow_3.ImageColor3 = Color3.fromRGB(96, 140, 195)
 glow_3.ImageTransparency = 0.500
 
+ntfhandlersunset.Name = "ntf-handler-sunset"
+ntfhandlersunset.Parent = sunset
+ntfhandlersunset.AnchorPoint = Vector2.new(0, 1)
+ntfhandlersunset.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+ntfhandlersunset.Position = UDim2.new(1, 0, 2, 0)
+ntfhandlersunset.Size = UDim2.new(0, 218, 0, 22)
+
+UICorner_3.CornerRadius = UDim.new(0, 2)
+UICorner_3.Parent = ntfhandlersunset
+
+glow_4.Name = "glow"
+glow_4.Parent = ntfhandlersunset
+glow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glow_4.BackgroundTransparency = 1.000
+glow_4.Position = UDim2.new(-0.182531521, 0, -1.0019753, 0)
+glow_4.Size = UDim2.new(0, 77, 0, 66)
+glow_4.Image = "http://www.roblox.com/asset/?id=9313765710"
+glow_4.ImageColor3 = Color3.fromRGB(96, 140, 195)
+glow_4.ImageTransparency = 0.500
+
+glow_5.Name = "glow"
+glow_5.Parent = ntfhandlersunset
+glow_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glow_5.BackgroundTransparency = 1.000
+glow_5.Position = UDim2.new(-0.767908216, 0, -2.01976156, 0)
+glow_5.Size = UDim2.new(0, 547, 0, 80)
+glow_5.ZIndex = 0
+glow_5.Image = "http://www.roblox.com/asset/?id=9313765710"
+glow_5.ImageColor3 = Color3.fromRGB(96, 140, 195)
+glow_5.ImageTransparency = 0.500
+
+glow_6.Name = "glow"
+glow_6.Parent = ntfhandlersunset
+glow_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glow_6.BackgroundTransparency = 1.000
+glow_6.Position = UDim2.new(0.643593907, 0, -1, 0)
+glow_6.Size = UDim2.new(0, 128, 0, 66)
+glow_6.ZIndex = 0
+glow_6.Image = "http://www.roblox.com/asset/?id=9313765710"
+glow_6.ImageColor3 = Color3.fromRGB(96, 140, 195)
+glow_6.ImageTransparency = 0.500
+
+main_2.Name = "main"
+main_2.Parent = ntfhandlersunset
+main_2.BackgroundColor3 = Color3.fromRGB(16, 14, 16)
+main_2.Position = UDim2.new(-0.0135193933, 0, -0.0434782505, 0)
+main_2.Size = UDim2.new(0, 220, 0, 22)
+main_2.ZIndex = 2
+
+UICorner_4.CornerRadius = UDim.new(0, 2)
+UICorner_4.Parent = main_2
+
+UIStroke_2.Parent = main_2
+UIStroke_2.Color = Color3.fromRGB(255, 255, 255)
+UIStroke_2.Thickness = 1.500
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(99, 109, 195)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(76, 111, 155))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = UIStroke_2
+
+notifything.Name = "notifything"
+notifything.Parent = main_2
+notifything.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+notifything.BackgroundTransparency = 1.000
+notifything.Position = UDim2.new(0.245684266, 0, -0.0454545468, 0)
+notifything.Size = UDim2.new(0, 61, 0, 23)
+notifything.Font = Enum.Font.Ubuntu
+notifything.Text = "notification:"
+notifything.TextColor3 = Color3.fromRGB(255, 255, 255)
+notifything.TextSize = 10.000
+notifything.TextStrokeTransparency = 0.400
+notifything.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(90, 105, 161)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(161, 189, 255))}
+UIGradient_5.Offset = Vector2.new(0, 80)
+UIGradient_5.Parent = notifything
+
+dp.Name = "dp"
+dp.Parent = main_2
+dp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dp.BackgroundTransparency = 1.000
+dp.Position = UDim2.new(0.0213251449, 0, -0.0454545468, 0)
+dp.Size = UDim2.new(0, 50, 0, 23)
+dp.Font = Enum.Font.Ubuntu
+dp.Text = "dopium  ~"
+dp.TextColor3 = Color3.fromRGB(255, 255, 255)
+dp.TextSize = 10.000
+dp.TextStrokeTransparency = 0.200
+dp.TextWrapped = true
+
+notText.Name = "notText"
+notText.Parent = main_2
+notText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+notText.BackgroundTransparency = 1.000
+notText.Position = UDim2.new(0.522956967, 0, -0.0454545468, 0)
+notText.Size = UDim2.new(0, 104, 0, 23)
+notText.Font = Enum.Font.Ubuntu
+notText.Text = "godmode turned on"
+notText.TextColor3 = Color3.fromRGB(255, 255, 255)
+notText.TextSize = 10.000
+notText.TextStrokeTransparency = 0.000
+notText.TextWrapped = true
+
 -- Scripts:
 
-local function EEWKLQJ_script() -- time.LocalScript 
+local function JEKFJUJ_script() -- time.LocalScript 
 	local script = Instance.new('LocalScript', time)
 
 	local timestamp = 906000490
@@ -244,61 +360,13 @@ local function EEWKLQJ_script() -- time.LocalScript
 		wait(1)
 	end
 end
-coroutine.wrap(EEWKLQJ_script)()
-local function MDGYZKY_script() -- wmhandlersunset.Handler 
-	local script = Instance.new('LocalScript', wmhandlersunset)
+coroutine.wrap(JEKFJUJ_script)()
+local function NDOCRPA_script() -- ntfhandlersunset.localscript 
+	local script = Instance.new('LocalScript', ntfhandlersunset)
 
-	local RunService = game:GetService("RunService")
-	local PingRemote = script.GetPing
-	
-	local PingCounter = script.Parent.main.ping
-	
-	local Colors = {
-		Good = Color3.fromRGB(0, 255, 0),
-		Normal = Color3.fromRGB(255, 255, 0),
-		Bad = Color3.fromRGB(255, 0, 0)
-	}
-	
-	function GetPing()
-		local Send = tick()
-		local Ping = nil
-	
-		PingRemote:FireServer()
-	
-		local Receive; Receive = PingRemote.OnClientEvent:Connect(function()
-			Ping = tick() - Send 
-		end)
-	
-		wait(1)
-	
-		Receive:Disconnect()
-	
-		return Ping or 999
-	end
-	
-	local PingThread = coroutine.wrap(function()
-		while wait() do
-			local Ping = tonumber(string.format("%.3f", GetPing() * 1000))
-			PingCounter.Text = (math.floor(Ping))
-		end
-	end)
-	
-	PingThread()
-	
-	
+	wait(3)
+	script.Parent.Parent["ntf-handler-sunset"]:TweenPosition(UDim2.new(0.843, 0,1, 0),"Out","Quint",0.8)
+	wait(5)
+	script.Parent.Parent["ntf-handler-sunset"]:TweenPosition(UDim2.new(1, 0, 2, 0),"Out","Quint",20)
 end
-coroutine.wrap(MDGYZKY_script)()
-local function VKSRJ_script() -- wmhandlersunset.PingHandler 
-	local script = Instance.new('Script', wmhandlersunset)
-
-	-- Created by despwned-AZURE CORPORATION
-	local PingRemote = script.Parent.Handler.GetPing
-	
-	PingRemote.OnServerEvent:Connect(function(Player)
-		PingRemote:FireClient(Player)
-	end)
-	
-	
-	
-end
-coroutine.wrap(VKSRJ_script)()
+coroutine.wrap(NDOCRPA_script)()
